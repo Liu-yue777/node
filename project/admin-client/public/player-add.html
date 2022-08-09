@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+  <title>首页</title>
+</head>
+
+<body>
+  <!-- 头部导航条 -->
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+          data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="./index.html">2022年世界杯阿根廷男子国家队球员大名单</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <!-- <li><a href="./login.html">登录</a></li>
+          <li><a href="./register.html">注册</a></li> -->
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+              aria-expanded="false"><em class="showname">未登录 </em><span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">个人中心</a></li>
+              <li><a href="#">修改资料</a></li>
+              <li class="logout"><a href="#">退出登录</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+
+  <div class="container-fluid">
+    <div class="row">
+      <!-- 左侧导航 -->
+      <div class="col-sm-3 col-md-2 content-left ">
+        <ul class="nav nav-pills nav-stacked">
+          <li role="presentation" class="active"><a href="#">球员管理</a></li>
+          <li role="presentation"><a href="./player-list.html">球员列表</a></li>
+          <li role="presentation"><a href="#">添加球员</a></li>
+        </ul>
+        <ul class="nav nav-pills nav-stacked">
+          <li role="presentation" class="active"><a href="#">用户管理</a></li>
+          <li role="presentation"><a href="#">用户列表</a></li>
+          <li role="presentation"><a href="#">添加用户</a></li>
+        </ul>
+      </div>
+      <!-- 右侧内容 -->
+      <div class="col-sm-9 col-md-10 col-sm-offset-3 col-md-offset-2 cotent-right">
+        <!-- 路径导航 -->
+        <ol class="breadcrumb">
+          <li><a href="#">首页</a></li>
+          <li><a href="#">球员管理</a></li>
+          <li class="active">添加球员</li>
+        </ol>
+        <!-- 添加球员 -->
+        <div class="input-group">
+          <span class="input-group-addon" id="basic-addon3">球员姓名</span>
+          <input id="name" type="text" class="form-control" placeholder="请输入球员名称">
+        </div>
+        <div class="input-group">
+          <span class="input-group-addon" id="basic-addon3">球员年龄</span>
+          <input id="age" type="text" class="form-control" placeholder="请输入球员年龄">
+        </div>
+        <div class="input-group">
+          <span class="input-group-addon" id="basic-addon3">球员号码</span>
+          <input id="num" type="text" class="form-control" placeholder="请输入球员号码">
+        </div>
+        <div class="input-group">
+          <span class="input-group-addon" id="basic-addon3">球员位置</span>
+          <select id="position" class="form-control">
+            <option value="请选择">请选择</option>
+            <option value="中锋">中锋</option>
+            <option value="边锋">边锋</option>
+            <option value="中场">中场</option>
+            <option value="中卫">中卫</option>
+            <option value="边卫">边卫</option>
+            <option value="门将">门将</option>
+          </select>
+        </div>
+        <div class="input-group">
+          <span class="input-group-addon" id="basic-addon3">上传图片</span>
+          <div class="uploads">
+            <form class="form-inline">
+              <div class="form-group">
+                <input type="file" name="myimg">
+              </div>
+              <button class="btn btn-primary">上传图片</button>
+            </form>
+          </div>
+        </div>
+        <div class="input-group">
+          <span class="input-group-addon">图片地址</span>
+          <input id="imgurl" readonly type="text" class="form-control" placeholder="上传的图片地址">
+        </div>
+        <div class="text-center">
+          <button class="btn btn-success">添加球员</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</body>
+
+</html>

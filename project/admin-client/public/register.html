@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+  <title>注册页</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="form-signin">
+      <h2 class="form-signin-heading">注册页</h2>
+      <label for="user" class="sr-only">账号：</label>
+      <input type="text" id="user" class="form-control" placeholder="请输入账号" required autofocus>
+      <label for="pass" class="sr-only">密码</label>
+      <input type="password" id="pass" class="form-control" placeholder="请输入密码" required>
+      <label for="nick" class="sr-only">昵称</label>
+      <input type="text" id="nick" class="form-control" placeholder="请输入昵称" required>
+      <label for="email" class="sr-only">邮箱</label>
+      <input type="text" id="email" class="form-control" placeholder="请输入邮箱" required>
+      <div class="search">
+        <div class="form-group pull-left">
+          <input type="text" id="code" class="form-control" placeholder="请输入验证码">
+        </div>
+        <input class="btn btn-success pull-left" value="发送验证码" type="button">
+      </div>
+      <select id="sex" class="form-control">
+        <option value="">请选择</option>
+        <option value="男">男</option>
+        <option value="女">女</option>
+        <option value="坤">坤</option>
+      </select>
+      <button class="btn btn-lg btn-primary btn-block" type="submit">注册</button>
+    </div>
+
+  </div> <!-- /container -->
+  <div class="bg"></div>
+
+</body>
+
+</html>
